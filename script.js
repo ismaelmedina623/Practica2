@@ -65,4 +65,44 @@ const numerosEnObjetos = ListaNumeros.map(
         }
     }
 )
-console.log(numerosEnObjetos)
+console.log(numerosEnObjetos);
+
+// FUNCION FILTER
+
+const numerosX = [90,70,30,10,50];
+const numerosFiltrados = numerosX.filter (
+    numX = numX > 50
+);
+console.log(numerosFiltrados);
+
+const personas = [
+    {
+        nombre: "ismael",
+        edad: 20
+    },
+    {
+        nombre: "Ricardo",
+        edad: 24
+    },
+    {
+        nombre: " Marlen",
+        edad: 31
+    },
+]
+const personasMayores = personas.filter(
+    (perosonaX) => {
+        return perosonaX.edad > 18;
+    }
+)
+console.log(personasMayores);
+
+// UNCION REDUCE
+const numerosY = [3,6,9,12,16];
+const sumaNumeros = numerosY.reduce(
+    (variablePersistente, elemento) => 
+        variablePersistente + elemento
+    ,
+    0
+);
+
+console.log(sumaNumeros);
